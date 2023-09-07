@@ -12,10 +12,9 @@ import kotlinx.coroutines.launch
 class CountryViewModel : ViewModel() {
 
     //Used to check edge cases and null values.
-    private val countryRepo = FakeCountryRepository()
+    //private val countryRepo = FakeCountryRepository()
 
-    //private val countryRepo = CountryRepositoryImpl()
-
+    private val countryRepo = CountryRepositoryImpl()
 
     private val _liveData = MutableLiveData<Result<List<Country?>>>()
     val liveData = _liveData

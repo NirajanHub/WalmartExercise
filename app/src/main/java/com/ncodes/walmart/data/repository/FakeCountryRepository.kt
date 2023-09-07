@@ -14,45 +14,45 @@ class FakeCountryRepository : CountryRepository {
     }
 
     private fun getList(): List<Country> {
-        return emptyList()
-    //        listOf(
-//            Country(
-//                "Kabul",
-//                "AF",
-//                Currency("AFN", "Afghan afghani", "؋"),
-//                "https://restcountries.eu/data/afg.svg",
-//                Language("ps", "Pashto"),
-//                "Afghanistan",
-//                "AS"
-//            ),
-//            Country(
-//                "Mariehamn",
-//                "AX",
-//                Currency("EUR", "Euro", "€"),
-//                "https://restcountries.eu/data/ala.svg",
-//                Language("sv", "Swedish"),
-//                "Åland Islands",
-//                "EU"
-//            ),
-//            Country(
-//                "Tirana",
-//                "AL",
-//                Currency("ALL", "Albanian lek", "L"),
-//                "https://restcountries.eu/data/alb.svg",
-//                Language("sq", "Albanian"),
-//                "Albania",
-//                "EU"
-//            ),
-//            Country(
-//                "Algiers",
-//                "DZ",
-//                Currency("DZD", "Algerian dinar", "د.ج"),
-//                "https://restcountries.eu/data/dza.svg",
-//                Language("ar", "Arabic"),
-//                "Algeria",
-//                "AF"
-//            )
-//        )
+       // return emptyList()
+           return listOf(
+            Country(
+                null,
+                null,
+                Currency("AFN", "Afghan afghani", "؋"),
+                "https://restcountries.eu/data/afg.svg",
+                Language("ps", "Pashto"),
+                "Afghanistan",
+                "AS"
+            ),
+            Country(
+                "Mariehamn",
+                "AX",
+                Currency("EUR", "Euro", "€"),
+                "https://restcountries.eu/data/ala.svg",
+                Language("sv", "Swedish"),
+                "Åland Islands",
+                "EU"
+            ),
+            Country(
+                "Tirana",
+                "AL",
+                Currency("ALL", "Albanian lek", "L"),
+                "https://restcountries.eu/data/alb.svg",
+                Language("sq", "Albanian"),
+                "Albania",
+                "EU"
+            ),
+            Country(
+                "Algiers",
+                "DZ",
+                Currency("DZD", "Algerian dinar", "د.ج"),
+                "https://restcountries.eu/data/dza.svg",
+                Language("ar", "Arabic"),
+                "Algeria",
+                "AF"
+            )
+        )
     }
 
 }
